@@ -1,0 +1,44 @@
+.mortgage-calculator {
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.input-group label {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.input-group input, .input-group select {
+  width: 100%;
+}
+
+.calc-result {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.result-amount {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: var(--space-xs);
+}
+
+@media (max-width: 640px) {
+  .calc-grid {
+    grid-template-columns: 1fr;
+  }
+}
